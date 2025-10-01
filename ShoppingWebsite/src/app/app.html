@@ -1,0 +1,16 @@
+<div>
+    <app-head-footer-comp
+        [total_price]="the_total_price"
+        [selected_products_amount]="products_selected"
+        [unselected_products_amount]="products_unselected"
+        [selected_categories]="categories_selected"
+        [unselected_categories]="categories_unselected">
+    </app-head-footer-comp>
+    <div class="products-main-layout-class">
+        <app-product-card-comp *ngFor="let product of products"
+            [product]="product"
+            (item_selected_event)="GetSelectedProductEvent($event)">
+
+        </app-product-card-comp>
+    </div>
+</div>

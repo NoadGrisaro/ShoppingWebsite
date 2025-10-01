@@ -1,0 +1,7 @@
+<nav class="navbar">
+  <h1>Total Price: {{ total_price }}₪</h1>
+  <h2>Selected Products: {{ selected_products_amount }}</h2>
+  <h3>Unselected Products: {{ unselected_products_amount }}</h3>
+  <h4>Selected Categories: {{ selected_categories.length ? selected_categories.join(', ') : 'None' }}</h4>
+  <h5>Unselected Categories: {{ unselected_categories.length ? unselected_categories.join(', ') : 'None' }}</h5>
+</nav>

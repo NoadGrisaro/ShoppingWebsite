@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: rgb(162, 113, 207);
+  padding: 20px 30px;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1, 
+.navbar h2, 
+.navbar h3, 
+.navbar h4, 
+.navbar h5 {
+  margin: 0;
+  padding: 10px 15px;
+  background-color: rgba(255,255,255,0.1); 
+  border-radius: 10px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar h1 {
+  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.navbar h1:hover,
+.navbar h2:hover,
+.navbar h3:hover,
+.navbar h4:hover,
+.navbar h5:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255,255,255,0.3);
+  cursor: default;
+}

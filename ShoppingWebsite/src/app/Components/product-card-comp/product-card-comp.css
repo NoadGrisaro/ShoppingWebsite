@@ -1,0 +1,107 @@
+.product-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  max-width: 300px; 
+  margin: 12px;
+}
+
+.product-class:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+}
+
+.product-selected-class {
+  border: 2px solid #600eee; 
+  background-color: #ab9df1; 
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.3);
+}
+
+.product-class img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease;
+}
+
+.product-class:hover img {
+  transform: scale(1.05); 
+}
+
+.product-desc-class {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 100%;
+}
+
+.product-desc-basics-class {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.product-desc-basics-class h1 {
+  font-size: 1.5rem; 
+  font-weight: 700;
+  color: #1f2937; 
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.product-desc-basics-class h2 {
+  font-size: 1.1rem; 
+  font-weight: 500;
+  color: #6b7280; 
+  margin: 0 0 8px 0;
+}
+
+.product-desc-basics-class h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3748; 
+  margin: 0;
+}
+
+.product-desc-units-class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px; 
+  width: 100%;
+}
+
+.product-desc-units-class input[type="number"] {
+  width: 60px;
+  padding: 8px;
+  border: 1px solid #d1d5db; 
+  border-radius: 8px;
+  font-size: 12px;
+  color: #1f2937;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease;
+}
+
+.product-desc-units-class input[type="number"]:focus {
+  outline: none;
+  border-color: #7c3aed; 
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.product-desc-units-class h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+

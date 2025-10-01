@@ -1,0 +1,8 @@
+
+
+.products-main-layout-class {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* space between items */
+  padding: 20px;
+}
