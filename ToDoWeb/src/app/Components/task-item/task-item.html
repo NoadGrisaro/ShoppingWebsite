@@ -1,0 +1,8 @@
+<li [class.done]="task.done">
+  {{ task.description }}
+  
+  <input 
+    type="checkbox" 
+    [checked]="task.done" 
+    (change)="toggleTask()">
+</li>

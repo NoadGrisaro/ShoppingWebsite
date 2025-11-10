@@ -1,0 +1,20 @@
+<h1>All my tasks</h1>
+<ul>
+  <app-task-item 
+    *ngFor="let task of tasks; let i = index"
+    [task]="task"
+    [index]="i"
+    (toggle)="onToggleTask(i)">
+  </app-task-item>
+</ul>
+
+<h1>Add new task</h1>
+
+<div class="add-task">
+  <input 
+    [(ngModel)]="newTask" 
+    placeholder="enter new task..."
+    />
+  
+  <button (click)="addTask()">add</button>
+</div>
